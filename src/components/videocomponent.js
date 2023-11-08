@@ -3,6 +3,7 @@ import HeaderComponent from "./Header";
 import SuggestedVideo from "./SuggestedVideo";
 import "./VideoComponent.css";
 import videos from "./videos.json";
+import chh from "./photo.png";
 import { useState } from "react";
 
 const VideoPage = () => {
@@ -39,7 +40,7 @@ const VideoPage = () => {
             <div className="channel-video">
               <img
                 src={
-                  "https://yt3.ggpht.com/dxED1O-r5cRS73JBlUk4VS3pZHDfiHcuRjRbFMcf6KgYhxP4NUlD7x0h4TR1XTXkl-JGjTPTYQ=s68-c-k-c0x00ffffff-no-rj"
+                 chh
                 }
                 className="channelImage"
               />

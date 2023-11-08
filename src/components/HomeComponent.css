@@ -41,6 +41,7 @@
   margin: 5px;
 }
 
+
 .logoimage {
   height: 60px;
 }
@@ -62,12 +63,23 @@
   justify-content: center;
   margin: 1px;
 }
+.sidebarItemme{
+  background-color: rgb(74, 231, 171);
+  font-size: larger;
+}
+.sidebarItemme:hover{
+  transform: scale(1.2);
+}
+.sidebarItem:hover{
+  background-color: rgb(156, 156, 158);
+}
 
 .videos {
   flex: 1;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
 }
 
 .video {
@@ -78,7 +90,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow-y: scroll;
+  overflow-y: hidden;
+
+}
+.video:hover{
+box-shadow: 0px 0px 25px  rgb(73, 73, 73);
+
 }
 
 .thumbnail {
@@ -95,6 +112,7 @@
   flex: 1;
   display: flex;
   flex-direction: row;
+
 }
 
 .channelphoto {
@@ -106,6 +124,7 @@
 .title {
   flex: 1;
   margin: 2px;
+  
 }
 
 .channel {
@@ -126,20 +145,33 @@
   flex: 4;
   padding-left: 15px;
 }
+.searchInput:hover{
+  border: 3px solid rgb(6, 77, 143);
+  /* transform: scale(1.05); */
+}
 
 .searchButton {
   width: 150px;
   flex: 1;
+  background-color: rgb(155, 154, 154);
   border: 1px solid rgb(176, 175, 175);
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   padding: 5px;
+}
+.searchButton:hover{
+  border: 3px solid rgb(37, 37, 119);
 }
 
 .signInButton {
   width: 80%;
   height: 100%;
   border-radius: 30px;
+  background-color: rgb(155, 154, 154);
+
+}
+.signInButton:hover{
+  border: 3px solid blue;
 }
 
 .channelImage {

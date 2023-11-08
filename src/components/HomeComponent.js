@@ -13,6 +13,8 @@ function HomeComponent() {
           <div className="sidebarItem">Channels</div>
           <div className="sidebarItem">Videos</div>
           <div className="sidebarItem">Liked Videos</div>
+          <div className="sidebarItemme"> BY.-> PRIYANSHU BHARTI </div>
+ 
         </div>
         <div className="videos">
           {videos.map(function (video) {
