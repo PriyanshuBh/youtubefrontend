@@ -3,7 +3,7 @@ import HeaderComponent from "./Header";
 import SuggestedVideo from "./SuggestedVideo";
 import "./VideoComponent.css";
 import videos from "./videos.json";
-import chh from "./photo.png";
+import chh from "./your-image.jpg"
 import { useState } from "react";
 
 const VideoPage = () => {
@@ -13,7 +13,7 @@ const VideoPage = () => {
     return video.id == id;
   }
 
-  const [like, setLikes] = useState(100);
+  const [like, setLikes] = useState(200);
 
   function onLiked() {
     setLikes(like + 1);
@@ -46,7 +46,7 @@ const VideoPage = () => {
               />
               <div className="channelInfo">
                 <div>{video.channel}</div>
-                <div>2.3M Subscribers</div>
+                <div>98M Subscribers</div>
               </div>
               <button className="channelButton">Subscribe</button>
             </div>

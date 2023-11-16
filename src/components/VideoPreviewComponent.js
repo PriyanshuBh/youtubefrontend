@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import ch from "./photo.png";
+import ch from "./your-image.jpg";
 function VideoPreviewComponent(props) {
   const title = props.title;
-  // const description = props.description;
+  const description = props.description;
   const url = props.url;
   const views = props.views;
   const channel = props.channel;
@@ -20,7 +20,7 @@ function VideoPreviewComponent(props) {
           <img
             alt="channelImage"
             src={
-             ch
+              ch
             }
             className="channelImage"
           />

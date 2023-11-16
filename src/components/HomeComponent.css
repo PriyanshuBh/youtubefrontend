@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+}
 .wrapper {
   height: 100vh;
   width: 100vw;
@@ -9,7 +14,8 @@
   height: 70px;
   display: flex;
   flex-direction: row;
-  border: 1px solid black;
+  border: 1px solid rgb(110, 110, 110);
+  /* border: 1px solid black; */
   position: sticky;
   top: 0;
   background-color: white;
@@ -25,30 +31,35 @@
 .logo {
   width: 150px;
   margin: 5px;
+  cursor: pointer;
 }
 
 .search {
-  width: 450px;
-
+  width: 540px;
+  height:53=4px;
   margin: 6px;
   display: flex;
   flex-direction: row;
 }
 
+
 .signin {
-  width: 150px;
+  width: 200px;
   padding: 5px;
   margin: 5px;
+
 }
 
 
+
 .logoimage {
-  height: 60px;
+  height: 55px;
+  cursor: pointer;
 }
 
 .sidebar {
   width: 200px;
-  border: 1px solid black;
+  border: 1px solid rgb(110, 110, 110);
   display: flex;
   flex-direction: column;
 }
@@ -63,23 +74,94 @@
   justify-content: center;
   margin: 1px;
 }
-.sidebarItemme{
-  background-color: rgb(74, 231, 171);
-  font-size: larger;
+.You{
+  height: 220px;
+  background-image: url("./subscriptions.png");
+  background-position: center;
+  
+  background-size: cover;
+  vertical-align: middle;
+  text-align: center;
+  /* background-color: rgba(0, 0, 0, 0.266); */
+  display: flex;
+
+  cursor: pointer;
 }
-.sidebarItemme:hover{
-  transform: scale(1.2);
+.Home{
+  height: 120px;
+  background-image: url("./home.png");
+  background-position: center;
+  
+  background-size: cover;
+  vertical-align: middle;
+  text-align: center;
+  /* background-color: rgba(0, 0, 0, 0.266); */
+  display: flex;
+
+  cursor: pointer;
+
+}
+.Subs{
+  height: 320px;
+  background-image: url("./explore.png");
+  background-position: center;
+  
+  background-size: cover;
+  vertical-align: middle;
+  text-align: center;
+  /* background-color: rgba(0, 0, 0, 0.266); */
+  display: flex;
+
+  cursor: pointer;
+}
+.line{
+  height: 30px;
+  background-image: url("./you.png");
+  background-position: center;
+  
+  background-size: cover;
+  vertical-align: middle;
+  text-align: center;
+  /* background-color: rgba(0, 0, 0, 0.266); */
+  display: flex;
+
+  cursor: pointer;
+
+}
+.mic{
+  background-image: url("./mic.png");
+  margin-left: 5px;
+  height: 55px;
+  cursor: pointer;
+  width: 55px;
+  background-position: center;
+  background-size: cover;
+}
+.sidebarIteme{
+  height: 40px;
+  vertical-align: middle;
+  text-align: center;
+  background-color: rgb(212, 78, 78);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1px;
+}
+.sidebarIteme:hover{
+  background-color: rgb(201, 128, 211);
+  box-shadow: 0px 0px 25px black;
 }
 .sidebarItem:hover{
-  background-color: rgb(156, 156, 158);
+  background-color:rgb(196, 83, 83);
+  box-shadow: 0px 0px 25px black;
 }
 
 .videos {
   flex: 1;
   display: flex;
+
   flex-direction: row;
   flex-wrap: wrap;
-
 }
 
 .video {
@@ -91,11 +173,11 @@
   align-items: center;
   justify-content: center;
   overflow-y: hidden;
-
+  transition: 1s;
+  border-radius: 16px;
 }
 .video:hover{
-box-shadow: 0px 0px 25px  rgb(73, 73, 73);
-
+  box-shadow: 0px 0px 30px rgb(83, 82, 82);
 }
 
 .thumbnail {
@@ -106,13 +188,14 @@ box-shadow: 0px 0px 25px  rgb(73, 73, 73);
   width: 100%;
   height: 100%;
   border-radius: 5px;
+  
 }
+
 
 .titlewrapper {
   flex: 1;
   display: flex;
   flex-direction: row;
-
 }
 
 .channelphoto {
@@ -124,7 +207,6 @@ box-shadow: 0px 0px 25px  rgb(73, 73, 73);
 .title {
   flex: 1;
   margin: 2px;
-  
 }
 
 .channel {
@@ -138,40 +220,52 @@ box-shadow: 0px 0px 25px  rgb(73, 73, 73);
 }
 
 .searchInput {
-  background-color: rgb(240, 238, 238);
+  background-color: rgb(252, 250, 250);
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
   border: 1px solid rgb(176, 175, 175);
   flex: 4;
   padding-left: 15px;
+  cursor: pointer;
+ 
 }
+
 .searchInput:hover{
-  border: 3px solid rgb(6, 77, 143);
-  /* transform: scale(1.05); */
+  background-color: rgb(88, 86, 86);
+
 }
 
 .searchButton {
   width: 150px;
   flex: 1;
-  background-color: rgb(155, 154, 154);
+  color: aliceblue;
+  background-color: rgb(118, 89, 89);
   border: 1px solid rgb(176, 175, 175);
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   padding: 5px;
+  cursor: pointer;
+
 }
 .searchButton:hover{
-  border: 3px solid rgb(37, 37, 119);
+  background-color: rgb(88, 86, 86);
+
 }
 
 .signInButton {
-  width: 80%;
-  height: 100%;
-  border-radius: 30px;
-  background-color: rgb(155, 154, 154);
-
+  width: 190px;
+  /* color: rgb(228, 228, 228); */
+  border-color: rgba(124, 123, 123, 0);
+  background-image: url("./Signin.png");
+  background-size: cover;
+  background-position: center;
+  height: 50px;
+  /* border-radius: 30px; */
+  cursor: pointer;
 }
 .signInButton:hover{
-  border: 3px solid blue;
+  background-color: rgb(77, 75, 75);
+ 
 }
 
 .channelImage {
